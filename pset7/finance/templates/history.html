@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class=table style="width:100%">
+        <tr>
+            <th>Date/Time</th>
+            <th>Shares</th>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Price</th>
+            </tr>
+
+        {% for current_stock in transactions_list %}
+            <tr>
+                <td>{{current_stock.timestamp}}</td>
+                <td>{{current_stock.shares}}</td>
+                <td>{{current_stock.symbol}}</td>
+                <td>{{current_stock.name}}</td>
+                <td>{{usd(current_stock.price)}}</td>
+            </tr>
+        {% endfor %} 
+        
+    </table>
+{% endblock %}

@@ -1,0 +1,8 @@
+0. TODO: what other dimensions does the framework allow? 
+    3x3, 5x5, 6x6, 7x7, 8x8, 9x9
+1. TODO: with what sort of data structure is the game's board represented?
+    matrix
+2. TODO: what function is called to greet the player at game's start?
+    greet();
+3. TODO: what functions do you apparently need to implement?
+    init(); draw(); move(); won();
